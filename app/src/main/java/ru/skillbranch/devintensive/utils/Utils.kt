@@ -13,7 +13,7 @@ object Utils {
 
     fun toInitials(firstName:String?,secondName:String?):String?{
 
-       
+
         val fIitial = firstName?.trim()?.toUpperCase(Locale.ROOT)?.take(1)?:""
         val lInitial = secondName?.trim()?.toUpperCase(Locale.ROOT)?.take(1)?:""
         return if((fIitial+lInitial).isBlank()) null else fIitial+lInitial
